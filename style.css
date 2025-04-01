@@ -98,6 +98,9 @@ main {
                 padding-block: .6rem;
                 border-radius: .5rem;
             }
+            .button-selected {
+                background: var(--topaz);
+            }
 
             input {
                 width: 100%;
@@ -168,6 +171,11 @@ main {
     
 }
 
+input::-webkit-inner-spin-button,
+    input::-webkit-outer-spin-button {
+        display: none;
+}
+
 @media(min-width: 920px) {
     header {
         margin-top: 5rem;
@@ -190,18 +198,13 @@ main {
                     grid-template-columns: repeat(3, 1fr);
 
                     button:hover {
-                        background: var(--topaz);
+                        background: var(--water-leaf);
                         cursor: pointer;
                         transition: .3s;
                     }
                 }
             }
 
-    input::-webkit-inner-spin-button,
-    input::-webkit-outer-spin-button {
-        display: none;
-
-    }
 
     .results {
         display: flex;
